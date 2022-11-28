@@ -21,6 +21,7 @@ function startBlock(container) {
     const difficultyButton = document.createElement('button');
     difficultyButton.classList.add('cardTableStartDifficultyButton');
     difficultyButton.textContent = 'Старт'
+    difficultyButton.disabled = true;
     container.append(
         start,
     );
@@ -34,6 +35,31 @@ function startBlock(container) {
         difficultyLevelMedium,
         difficultyLevelHard,
     );
+    difficultyLevel.addEventListener('click', (event) => {
+        event.preventDefault();
+        const target = event.target;
+        if (target.dataset.level === 'low') {
+            target.style.backgroundColor = '#7AC100';
+            difficultyLevelMedium.style.backgroundColor = '#FFFFFF';
+            difficultyLevelHard.style.backgroundColor = '#FFFFFF';
+            difficultyButton.disabled = false;
+            window.application['level'] = 6;
+        } else if (target.dataset.level === 'medium') {
+            target.style.backgroundColor = '#7AC100';
+            difficultyLevelLow.style.backgroundColor = '#FFFFFF';
+            difficultyLevelHard.style.backgroundColor = '#FFFFFF';
+            difficultyButton.disabled = false;
+            window.application['level'] = 12;
+        } else if (target.dataset.level === 'hard') {
+            target.style.backgroundColor = '#7AC100';
+            difficultyLevelLow.style.backgroundColor = '#FFFFFF';
+            difficultyLevelMedium.style.backgroundColor = '#FFFFFF';
+            difficultyButton.disabled = false;
+            window.application['level'] = 18;
+        } else {
+            return;
+        };
+    });
     difficultyButton.addEventListener('click', (event) => {
         event.preventDefault();
         window.application.screens['cardTable'] = beginningOfTheGameScreen;
@@ -84,13 +110,14 @@ function beginningOfTheGameBlock(container) {
     cardTableBeginTopTimer.append(
         cardTableBeginTopTimerCounter,
     );
-    for (let i = 1; i <= 36; i++) {
+    for (i = 1; i <= window.application['level']; i++) {
         let nameCard = `card${i}`;
         let nameShirt = `shirt${i}`;
         nameCard = document.createElement('div');
         nameCard.classList.add('cardTableBeginCardsItem', 'eagle', 'quality', 'suit');
         nameCard.setAttribute("data-cardNumber", `${i}`);
-        nameShirt = document.createElement('div');
+        nameShirt = document.createElement('img');
+        nameShirt.setAttribute('src', './src/img/shirt.svg')
         nameShirt.classList.add('cardTableBeginCardsShirt');    
         cardTableBeginCards.append(
             nameCard,

@@ -7,5 +7,7 @@ window.application = {
     renderBlock: function(blockName, container) {
         window.application.blocks[`${blockName}`](container);
     },
-    timers: []
+    timers: [],
+    level: '',
+    // level отражает число карт в зависимости от выбранной сложности
 }

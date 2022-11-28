@@ -10,24 +10,15 @@ body {
   width: 480px;
   height: 460px;
   border-radius: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 .cardTableStartTitle {
   font-weight: 400;
   font-size: 40px;
@@ -38,15 +29,11 @@ body {
   margin-top: 52px;
   margin-bottom: 0;
 }
-
 .cardTableStartDifficulty {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 48px;
   margin-bottom: 67px;
 }
-
 .cardTableStartDifficultyLevel {
   width: 98px;
   height: 98px;
@@ -56,20 +43,13 @@ body {
   font-weight: 400;
   font-size: 64px;
   line-height: 72px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: #0080C1;
   margin-left: 12px;
   margin-right: 12px;
 }
-
 .cardTableStartDifficultyButton {
   width: 246px;
   height: 50px;
@@ -77,40 +57,25 @@ body {
   background: #7AC100;
   border-radius: 12px;
 }
-
 .cardTableBeginTop {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-left: 26px;
   margin-right: 26px;
   margin-bottom: 35px;
 }
-
 .cardTableBeginTopLabel {
   margin-top: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 22px;
   margin-right: 22px;
 }
-
 .cardTableBeginTopTimer {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-wrap: wrap;
   display: flex;
   width: 155px;
 }
-
 .cardTableBeginTopTimerSec {
   font-style: normal;
   font-weight: 400;
@@ -119,7 +84,6 @@ body {
   padding-left: 57px;
   color: #FFFFFF;
 }
-
 .cardTableBeginTopTimerMin {
   font-style: normal;
   font-weight: 400;
@@ -128,7 +92,6 @@ body {
   padding-left: 39px;
   color: #FFFFFF;
 }
-
 .cardTableBeginTopTimerCounter {
   font-style: normal;
   font-weight: 400;
@@ -136,7 +99,6 @@ body {
   line-height: 72px;
   color: #FFFFFF;
 }
-
 .cardTableBeginTopButton {
   width: 246px;
   height: 50px;
@@ -147,38 +109,25 @@ body {
   font-size: 24px;
   line-height: 32px;
 }
-
 .cardTableBeginCards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-left: 26px;
   margin-right: 26px;
   gap: 15px;
 }
-
 .cardTableBeginCardsItem {
   width: 95px;
   height: 133px;
   background: #FFFFFF;
   border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .cardTableBeginCardsShirt {
   width: 83px;
   height: 121px;
   background: #E4FBFF;
   border-radius: 4px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

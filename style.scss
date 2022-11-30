@@ -1,0 +1,136 @@
+body {
+    background-color: #004980;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.cardTable {
+    &Start {
+        background-color: #C2F5FF;
+        width: 480px;
+        height: 460px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        &Title {
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            color: #004980;
+            width: 208px;
+            margin-top: 52px;
+            margin-bottom: 0;
+        }
+        &Difficulty {
+            display: flex;
+            margin-top: 48px;
+            margin-bottom: 67px;
+            &Level {
+                width: 98px;
+                height: 98px;
+                background: #FFFFFF;
+                border-radius: 12px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 64px;
+                line-height: 72px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #0080C1;
+                margin-left: 12px;
+                margin-right: 12px;
+            }
+            &Button {
+                width: 246px;
+                height: 50px;
+                color: white;
+                background: #7AC100;
+                border-radius: 12px;
+            }
+        }
+    }
+    &Begin {
+        &Top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 26px;
+            margin-right: 26px;
+            margin-bottom: 35px;
+            &Label {
+                margin-top: 22px;
+                display: flex;
+                margin-left: 22px;
+                margin-right: 22px;
+            }
+            &Timer {
+                flex-wrap: wrap;
+                display: flex;
+                width: 155px;
+                &Sec {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 32px;
+                    padding-left: 57px;
+                    color: #FFFFFF;
+                }
+                &Min {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 32px;
+                    padding-left: 39px;
+                    color: #FFFFFF;
+                }
+                &Counter {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 64px;
+                    line-height: 72px;
+                    color: #FFFFFF;
+                }    
+            }
+            &Button {
+                width: 246px;
+                height: 50px;
+                color: white;
+                background: #7AC100;
+                border-radius: 12px;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+        &Cards {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 26px;
+            margin-right: 26px;
+            gap: 15px;
+            &Item {
+                width: 95px;
+                height: 133px;
+                background: #FFFFFF;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &Shirt {
+                width: 83px;
+                height: 121px;
+                background: #E4FBFF;
+                border-radius: 4px;
+            }
+        }
+    }
+}

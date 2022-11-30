@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+   
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #9C27B0;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app-title {
+    color: #fff;
+    font-weight: 100;
+    font-size: 7vw;
+}
+
+.app-subtitle {
+    color: #66CC99;
+    font-weight: 300;
+    font-size: 5vw;
+}
+
+.app-button {
+    width: 40vh;
+    text-align: center;
+    padding: 1vw;
+    border-radius: 5vh;
+    font-weight: 400;
+    font-size: 4vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFCC99;
+    cursor: pointer;
+    transition: all, 0.3s;
+}
+.app-button:hover {
+    scale: 1.15;
+    background-color: #231F20;
+    color: #fff;
+    transition: all, 0.3s;
+}
+
+/* ЭКРАН АВТОРИЗАЦИИ */
+
+.authorization-screen {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3vw;
+}
+
+
+
+.authorization-screen__input {
+    width: 55vh;
+    text-align: center;
+    padding: 2vw;
+    border-radius: 5vh;
+    font-weight: 400;
+    font-size: 4vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.authorization-screen__input::placeholder {
+    font-weight: 100;
+    font-size: 4vh;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+/* БЛОК ОНЛАЙН-ПОЛЬЗОВАТЕЛЕЙ */
+
+.lobby_online-user-title {
+    color: #fff;
+    font-weight: 100;
+    font-size: 3vw;
+    position: fixed;
+    top:0;
+    left: 8vh;
+}
+.lobby_online-user {
+    color: #fff;
+    font-weight: 100;
+    font-size: 3vw;
+    position: fixed;
+    top: 8vh;
+    left: 8vh;
+    overflow-y: scroll;
+    height: 80vh;
+}
+.lobby_online-user::-webkit-scrollbar {
+    width: 0;
+  }
+  
+/* ЭКРАН ХОДА */
+
+.my-move__buttons {
+    display: flex;
+    height: 70vh;
+    align-items: flex-end;
+    gap: 3vh;
+}
+
+.my-move__move-button-rock {
+    width: 100%;
+}
+
+.my-move__move-button {
+    cursor: pointer;
+    transition: none .3s;
+}
+
+.my-move__move-button:hover {
+    scale: 1.15;
+    transition: all .3s;
+}
+
+/* ЭКРАН ОКОНЧАНИЯ ИГРЫ */
+.end-of-game {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    align-items: center;
+}

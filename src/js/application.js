@@ -1,11 +1,11 @@
 window.application = {
     blocks: {},
     screens: {},
-    renderScreen: function(screenName) {
+    renderScreen: function (screenName) {
         window.application.screens[`${screenName}`]();
     },
-    renderBlock: function(blockName, container) {
+    renderBlock: function (blockName, container) {
         window.application.blocks[`${blockName}`](container);
     },
-    timers: []
-}
+    timers: [],
+};

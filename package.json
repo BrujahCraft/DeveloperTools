@@ -1,0 +1,35 @@
+{
+  "name": "gitwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -p 3004",
+    "format": "prettier --write ./src/js/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrujahCraft/DeveloperTools.git"
+  },
+  "keywords": [
+    "key"
+  ],
+  "author": "Brujah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrujahCraft/DeveloperTools/issues"
+  },
+  "homepage": "https://github.com/BrujahCraft/DeveloperTools#readme",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "axios": "^1.2.0",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.0"
+  }
+}
